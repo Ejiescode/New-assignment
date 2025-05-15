@@ -13,7 +13,6 @@ function Registration () {
   function Verify (e){
    e.preventDefault();
     if (fullName&& email && password && confirmPassword&& isChecked) { 
-      console.log(fullName, email, password, confirmPassword, isChecked);
     } else {
       setError(true);
     }
@@ -85,14 +84,14 @@ function Registration () {
           <p className="text-red-600">Please fill in all credentials</p>
         )}
     
-        {<Link to="/login">
+      
           <button
           type="submit"
           className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200"
         >
           Register
         </button>
-        </Link> }
+      
     
       </form>
       <div className="text-center mt-4 text-sm text-gray-600">
