@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import Navbar from '../component/Navbar';
-import HeroSection from '../component/HeroSection';
+// import HeroSection from '../component/HeroSection';
 import Cards from '../component/Cards';
 import Footer from '../component/Footer';
 import Props from '../component/Props';
+import Loading from '../component/Loading';
+
+const HeroSection = React.lazy(
+  () =>
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(import("../component/HeroSection"));
+      }, 5000);
+    })
+);
 
 function HomePage() {
-  return (
+return (
     <div>
-        <Navbar/>
+       <Navbar/>
+        <Suspense fallback={<Loading/>}>
         <HeroSection/>
+        </Suspense>
         <Props/>
        <div className="flex">
       <Cards image="https://us-rd.gr-cdn.com/700x/https://us-wd.gr-cdn.com/customers/sites/16/2024/04/1150/LogoECSPublishingGroup1-removebg-preview.png"

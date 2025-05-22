@@ -36,7 +36,8 @@ function Navbar () {
         <li className="flex items-center gap-1 hover:text-[#00a2ff] ">Products
           <VscChevronRight className="text-xs mt-1"/></li>
           </Link> }
-        <li className="flex items-center gap-1 hover:text-[#00a2ff] ">Pricing </li>
+         <Link to="/post"><li className="flex items-center gap-1 hover:text-[#00a2ff] ">
+          Posts </li></Link>
         <li className="flex items-center gap-1 hover:text-[#00a2ff] " >Resources<VscChevronRight className="text-xs mt-1"/></li>
         <li className="flex items-center gap-1 hover:text-[#00a2ff] ">Book a demo</li>
         <div className="flex lg:hidden text-2xl z-10">
@@ -73,7 +74,8 @@ function Navbar () {
         <ul className="space-y-4 text-2xl font-semibold cursor-pointer mb-[600px]" >
   <li className=" hover:text-[#00a2ff] "> 
     Product</li>
-  <li className="hover:text-[#00a2ff]">Pricing</li>
+ 
+  <li className="hover:text-[#00a2ff]">Pricig</li>
   <li className="hover:text-[#252728]">
   Resources</li>
     <li className="hover:text-[#00a2ff]">Book a demo</li> 

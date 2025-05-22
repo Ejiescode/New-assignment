@@ -21,6 +21,7 @@ function Login () {
     setLoading(true);
     setTimeout(() => {
      navigate("/"); 
+     setLoading(false);
     }, 5000);
     
     console.log(response);
@@ -74,7 +75,7 @@ function Login () {
           )}
         
           
-    {/* { <Link to="/"> */}
+  
           <button
           type="submit"
           className="w-full flex justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200"

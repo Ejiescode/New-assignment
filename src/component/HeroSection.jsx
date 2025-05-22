@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 function HeroSection (){
   const [IsSubscribed, setIsSubscribed] = useState(false);
   function Subscribe (){
